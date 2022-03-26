@@ -22,30 +22,25 @@ const Login = () => {
 
     return (
         <div>
-            <div className=' m-2 d-flex justify-content-center align-items-center'>
-                <Form>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                        </Form.Text>
+            <div className='m-3 d-flex justify-content-center align-items-center'>
+                <Form className='m-2'>
+                    <Form.Group className="py-2 " controlId="formBasicEmail">
+                        <Form.Label >Email address</Form.Label>
+                        <Form.Control className='px-5' type="email" placeholder="Enter email" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
+                   
+                    <Button className='px-4 py-2' style={{backgroundColor:"#ec407a",color:'white'}}  type="submit">
                         Submit
                     </Button>
                 </Form>
             </div>
             <br />
-            <Button className='bg-primary border-2 rounded p-2' onClick={handleGoogleLogin} > Google Login</Button>
+            <Button  style={{backgroundColor:"#01579b",color:'white'}}  className='px-4 py-2' onClick={handleGoogleLogin} > Google Login</Button>
         </div>
     );
 };

@@ -7,7 +7,7 @@ const Hotel = (props) => {
     return (
       
 < >
-        <Col lg={4} className='border'>
+        <Col lg={4}>
           <Card>
             <Card.Img variant="top" src={img} />
             <Card.Body>

@@ -13,8 +13,8 @@ const Hotels = () => {
         })
     },[])
     return (
-        <div>
-        <h2 className=''> Top Fantasy Hotel</h2>
+        <div className='border p-4'>
+        <h2 > Top Fantasy Hotel</h2>
            <Row id='hotel' xs={1} md={2} className="g-4 m-3">
             {
                 hotel.map(user => <Hotel

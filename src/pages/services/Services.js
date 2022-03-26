@@ -35,6 +35,9 @@ const Services = () => {
 
       };
     return (
+        <div className='border p-3'>
+            <h2 className='m-'>Top Destinations</h2>
+       
         
            <Row id='services' xs={1} md={2} className="g-4 m-3">
                
@@ -47,6 +50,7 @@ const Services = () => {
             }
             
         </Row> 
+        </div>
         
     );
 };

@@ -9,8 +9,8 @@ const Home = () => {
         <div id='home'>
             <Carosel></Carosel>
             <Container>
-            <h2 className='m-4'>Top Destinations</h2>
             <Services></Services>
+            <br />
             <Hotels></Hotels>
             <br />
             <Contact></Contact>
