@@ -14,12 +14,12 @@ const Service = (props) => {
                <p>  {title} </p>
               <Card.Text>
               <h5> {dolar} </h5>
-             <Link  to={`/detail/${_id}`}> <Button className='text-decoration-none mt-3 w-100 bg-dark border-0'> Purchase</Button> </Link>
+             <Link  to={`/detail/${_id}`}> <Button style={{backgroundColor:"#212121"}} className='text-decoration-none mt-3 w-100  border-0'> Purchase</Button> </Link>
              <br />
 
               <Button onClick={() => {
                 props.handleAddToCart(props.service);
-              }} className='mt-3 w-100 bg-primary border-0'>Add to  MyOrder</Button>
+              }} style={{backgroundColor:"#ff8a65"}} className='mt-3 w-100 border-0'>Add to  MyOrder</Button>
               
               </Card.Text>
             </Card.Body>

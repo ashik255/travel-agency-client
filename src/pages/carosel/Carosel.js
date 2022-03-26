@@ -6,13 +6,13 @@ import bannerTwo from './../../images/banar-2.jpg'
 
 const Carosel = () => {
     return (
-        <div style={{ height: '100vh', overflow: 'hidden' }}>
+        <div className="mb-5">
 
 
-            <Carousel fade >
+            <Carousel fade  style={{maxHeight:'84vh',overflow:'hidden'}}>
                 <Carousel.Item >
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 h-100"
                         src={bannerOne}
                         alt="First slide"
                     />
@@ -23,7 +23,7 @@ const Carosel = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100 h-75"
+                        className="d-block w-100  h-100"
                         src={bannerTwo}
                         alt="Second slide"
                     />

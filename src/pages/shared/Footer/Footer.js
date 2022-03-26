@@ -1,24 +1,25 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { BsFacebook } from "react-icons/bs";
+import {FiPhoneCall} from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <Row className='m-4 '>
-            <Col>
-                <h6>NEEd HELP</h6>
+        <Row  style={{backgroundColor:"#263238",color:'#f2f2f2'}} className='m-2 p-3 '>
+             <Col>
+                <h4>NEED HELP</h4>
                 <br />
-                <p>call us</p>
-                <h4>+088445454544</h4>
-                <p>Email for Us</p>
-                <h4>mai98.bd@gmail.com</h4>
-                <h6>Follow Us</h6>
-                <p><span className='m-3'>< BsFacebook /> </span>  <span className='m-5'> <FaTwitter /> </span>  <span className='m-2'> <FaInstagram /> </span> </p>
+                <h4><span><FiPhoneCall /></span>+088013054454544</h4>
+                <br />
+                <h4> <span> <AiOutlineMail /> </span> mai98.bd@gmail.com</h4>
+                <br />
+                <p><span className='m-3'><BsFacebook size='2.5em' /> </span>  <span className='m-5'> <FaTwitter size='2.5em' /> </span>  <span className='m-2'> <FaInstagram size='2.5em' /> </span> </p>
 
             </Col>
             <Col>
-                <h6>Company</h6>
+                <h4>Company</h4>
                 <br />
                 <p>About Us</p>
                 <p>Community Blog</p>
@@ -27,7 +28,7 @@ const Footer = () => {
                 <p>Meet the Team</p>
             </Col>
             <Col>
-                <h6>SUPPORT</h6>
+                <h4>SUPPORT</h4>
                 <br />
                 <p>Account</p>
                 <p>Legal</p>
