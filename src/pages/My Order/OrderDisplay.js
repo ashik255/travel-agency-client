@@ -9,7 +9,7 @@ const OrderDisplay = (props) => {
         console.log('removed id',id)
         const  proceed = window.confirm('Are you sure ,you want to delete?')
         if(proceed){
-            const url = `https://damp-plateau-62877.herokuapp.com/users/${id}`
+            const url = `https://travel-agency-server-production.up.railway.app/users/${id}`
         fetch(url, {
             method:'DELETE'
         })

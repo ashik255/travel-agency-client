@@ -6,7 +6,7 @@ const Hotels = () => {
     const [hotel,seHotel] = useState([]);
 
     useEffect(()=>{
-        fetch('https://damp-plateau-62877.herokuapp.com/HotelData')
+        fetch('https://travel-agency-server-production.up.railway.app/HotelData')
         .then(res => res.json())
         .then (data => {
             seHotel(data);

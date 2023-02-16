@@ -9,7 +9,7 @@ const PlaceOrder = () => {
     const { serviceId } = useParams();
 
     useEffect(() => {
-        fetch('https://damp-plateau-62877.herokuapp.com/data')
+        fetch('https://travel-agency-server-production.up.railway.app/data')
             .then(res => res.json())
             .then(data => {
                 setDetails(data);

@@ -7,7 +7,7 @@ const Services = () => {
     const [cart,setCart] =useState([]);
 
     useEffect(()=>{
-        fetch('https://damp-plateau-62877.herokuapp.com/data')
+        fetch('https://travel-agency-server-production.up.railway.app/data')
         .then(res => res.json())
         .then (data => {
             setData(data);
@@ -17,7 +17,7 @@ const Services = () => {
         console.log("from handle add to cart",data)
         const newCart = [...cart, data];
         setCart(newCart);
-        fetch('https://damp-plateau-62877.herokuapp.com/users', {
+        fetch('https://travel-agency-server-production.up.railway.app/users', {
             method: 'POST',
             headers: {
                 "content-type": 'application/json'

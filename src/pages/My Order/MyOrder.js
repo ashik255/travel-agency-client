@@ -8,7 +8,7 @@ const MyOrder = () => {
 
     useEffect(() => {
         setIsSpinnerTrue(true);
-        fetch('https://damp-plateau-62877.herokuapp.com/users')
+        fetch('https://travel-agency-server-production.up.railway.app/users')
             .then(res => res.json())
             .then(data => setOrder(data))
         setIsSpinnerTrue(false);
