@@ -9,7 +9,7 @@ const PlaceOrder = () => {
     const { serviceId } = useParams();
 
     useEffect(() => {
-        fetch('https://travel-agency-server-production.up.railway.app/data')
+        fetch('https://travel-agency-server-bj54n20zh-ashik255.vercel.app/data')
             .then(res => res.json())
             .then(data => {
                 setDetails(data);

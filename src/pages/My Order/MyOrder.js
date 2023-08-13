@@ -8,7 +8,7 @@ const MyOrder = () => {
 
     useEffect(() => {
         setIsSpinnerTrue(true);
-        fetch('https://travel-agency-server-production.up.railway.app/users')
+        fetch('https://travel-agency-server-bj54n20zh-ashik255.vercel.app/users')
             .then(res => res.json())
             .then(data => setOrder(data))
         setIsSpinnerTrue(false);

@@ -7,7 +7,7 @@ const Services = () => {
     const [cart,setCart] =useState([]);
 
     useEffect(()=>{
-        fetch('https://travel-agency-server-production.up.railway.app/data')
+        fetch('https://travel-agency-server-bj54n20zh-ashik255.vercel.app/data')
         .then(res => res.json())
         .then (data => {
             setData(data);
@@ -17,7 +17,7 @@ const Services = () => {
         console.log("from handle add to cart",data)
         const newCart = [...cart, data];
         setCart(newCart);
-        fetch('https://travel-agency-server-production.up.railway.app/users', {
+        fetch('https://travel-agency-server-bj54n20zh-ashik255.vercel.app/users', {
             method: 'POST',
             headers: {
                 "content-type": 'application/json'

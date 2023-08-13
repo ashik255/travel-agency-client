@@ -6,7 +6,7 @@ const Hotels = () => {
     const [hotel,seHotel] = useState([]);
 
     useEffect(()=>{
-        fetch('https://travel-agency-server-production.up.railway.app/HotelData')
+        fetch('https://travel-agency-server-bj54n20zh-ashik255.vercel.app/HotelData')
         .then(res => res.json())
         .then (data => {
             seHotel(data);
